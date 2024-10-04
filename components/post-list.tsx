@@ -10,7 +10,7 @@ export default function PostList({ posts }: PostListProps) {
       {posts.map((post) => (
         <Card key={post.id}>
           <CardHeader>
-            <CardTitle>{`${post.title} (post ${post.id - 1})`}</CardTitle>
+            <CardTitle>{`${post.title} (post ${post.id})`}</CardTitle>
           </CardHeader>
           <CardContent>{post.body}</CardContent>
         </Card>
